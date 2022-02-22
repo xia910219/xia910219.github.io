@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="src/app.js"></script>
     <title>Documents</title> 
 </head>
 <body>
     <div id="app">
       <p>{{ message }}</p>
     </div>
+    <script>
+    const vm = new Vue ({
+      el: '#app',
+      data: {
+        message: 'Helle Vue！'
+      }
+    })
+    </script>
   </body>
 </html>
